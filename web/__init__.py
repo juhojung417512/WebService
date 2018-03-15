@@ -7,7 +7,7 @@ import parser
 
 app = Flask(__name__)
 
-@app.route('/')
+@application.route('/')
 def home():
 	crawler = parser.Crawler()
 	print(crawler.data)
@@ -20,7 +20,4 @@ def home():
 	f.write(crawler.html)
 	f.close()
 	return render_template('home.html')
-
-if __name__ == '__main__' : 
-	app.run(debug=True)
 
