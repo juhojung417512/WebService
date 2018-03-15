@@ -1,13 +1,18 @@
 from flask import Flask , render_template
-from parser import parser
+import requests
+import codecs
+from bs4 import BeautifulSoup
+import parser
+
 
 app = Flask(__name__)
 
 @app.route('/')
 def home():
-	print(parser.soup)
-	f = open('templates/home.html','w')
-	f.write(parser.html)
+	crawler = parser.Crawler()
+	print(crawler.data)
+	f = codecs.open('templates/home.html','w',encoding='utf-8')
+	f.write(crawler.html)
 	f.close()
 	return render_template('home.html')
 
