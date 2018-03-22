@@ -1,0 +1,31 @@
+#-*- coding: utf-8 -*-
+# 파서 부분 
+# bs4 사용하여 crawling
+import requests
+from bs4 import BeautifulSoup
+class Crawler :
+	req = requests.get('http://www.devkorea.co.kr/')
+	html = req.text
+	header = req.headers
+	status = req.status_code
+	is_ok = req.ok
+	soup = BeautifulSoup(html, 'html.parser')
+	html_start = '<html lang="ko">'
+	html_end = '</html>'
+	data = ''
+
+	def __init__(self):
+		pass	
+	def header_filed_crawling(self):
+		data += header
+	def body_filed_crawling(self,html_type,id_):
+		try:
+			data += soup.find(html_type,id=id_)
+		except:
+			print('cant find')
+	def login_filed_crawling(self,html_type,id_):
+                try:
+                	data += soup.find('form',{'id' :'miso_sidelogin'})
+                except:
+                        print('cant find')
+

@@ -2,22 +2,14 @@ from flask import Flask , render_template
 import requests
 import codecs
 from bs4 import BeautifulSoup
-import parser
+from parser import Crawler
 
 
 app = Flask(__name__)
 
-@application.route('/')
+@app.route('/')
 def home():
-	crawler = parser.Crawler()
-	print(crawler.data)
-	f = codecs.open('templates/home.html','r',encoding='utf-8')
-	if f.readlines() != None : 
-		f.close()
-	        f = codecs.open('templates/home.html','w',encoding='utf-8')
-		f.close()	
-	f = codecs.open('templates/home.html','w',encoding='utf-8')
-	f.write(crawler.html)
-	f.close()
-	return render_template('home.html')
+	crawler = Crawler()
+	crawler.body_filed_crawling('div','class','company')
+	return render_template('home.html',data = ''.join(crawler.data))
 
