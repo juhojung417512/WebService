@@ -3,7 +3,7 @@ import requests
 import codecs
 from bs4 import BeautifulSoup
 from parser import Crawler
-
+import pdb
 
 app = Flask(__name__)
 
