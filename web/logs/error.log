@@ -1,0 +1,340 @@
+----------------------------------------------------------------------------------
+[2018-03-26 16:27:42,802] [ERROR]: Exception on / [GET]
+Traceback (most recent call last):
+  File "/home/ubuntu/WebService/venv/lib/python3.5/site-packages/easyprocess/__init__.py", line 225, in start
+    env=self.env,
+  File "/usr/lib/python3.5/subprocess.py", line 947, in __init__
+    restore_signals, start_new_session)
+  File "/usr/lib/python3.5/subprocess.py", line 1551, in _execute_child
+    raise child_exception_type(errno_num, err_msg)
+FileNotFoundError: [Errno 2] No such file or directory: 'Xvfb'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/ubuntu/WebService/venv/lib/python3.5/site-packages/easyprocess/__init__.py", line 178, in check_installed
+    self.call()
+  File "/home/ubuntu/WebService/venv/lib/python3.5/site-packages/easyprocess/__init__.py", line 194, in call
+    self.start().wait(timeout=timeout)
+  File "/home/ubuntu/WebService/venv/lib/python3.5/site-packages/easyprocess/__init__.py", line 230, in start
+    raise EasyProcessError(self, 'start error')
+easyprocess.EasyProcessError: start error <EasyProcess cmd_param=['Xvfb', '-help'] cmd=['Xvfb', '-help'] oserror=[Errno 2] No such file or directory: 'Xvfb' return_code=None stdout="None" stderr="None" timeout_happened=False>
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/ubuntu/WebService/venv/lib/python3.5/site-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/ubuntu/WebService/venv/lib/python3.5/site-packages/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/ubuntu/WebService/venv/lib/python3.5/site-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/ubuntu/WebService/venv/lib/python3.5/site-packages/flask/_compat.py", line 33, in reraise
+    raise value
+  File "/home/ubuntu/WebService/venv/lib/python3.5/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/ubuntu/WebService/venv/lib/python3.5/site-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "./__init__.py", line 29, in home
+    crawler = Crawler()
+  File "./parser.py", line 13, in __init__
+    display = Display(visible=0, size=(800, 800))
+  File "/home/ubuntu/WebService/venv/lib/python3.5/site-packages/pyvirtualdisplay/display.py", line 34, in __init__
+    self._obj = self.display_class(
+  File "/home/ubuntu/WebService/venv/lib/python3.5/site-packages/pyvirtualdisplay/display.py", line 52, in display_class
+    cls.check_installed()
+  File "/home/ubuntu/WebService/venv/lib/python3.5/site-packages/pyvirtualdisplay/xvfb.py", line 38, in check_installed
+    ubuntu_package=PACKAGE).check_installed()
+  File "/home/ubuntu/WebService/venv/lib/python3.5/site-packages/easyprocess/__init__.py", line 180, in check_installed
+    raise EasyProcessCheckInstalledError(self)
+easyprocess.EasyProcessCheckInstalledError: cmd=['Xvfb', '-help']
+OSError=[Errno 2] No such file or directory: 'Xvfb'
+Program install error! 
+You can install it in terminal:
+sudo apt-get install xvfb
+----------------------------------------------------------------------------------
+[2018-03-26 16:38:26,090] [ERROR]: Exception on / [GET]
+Traceback (most recent call last):
+  File "/home/ubuntu/WebService/venv/lib/python3.5/site-packages/easyprocess/__init__.py", line 225, in start
+    env=self.env,
+  File "/usr/lib/python3.5/subprocess.py", line 947, in __init__
+    restore_signals, start_new_session)
+  File "/usr/lib/python3.5/subprocess.py", line 1551, in _execute_child
+    raise child_exception_type(errno_num, err_msg)
+FileNotFoundError: [Errno 2] No such file or directory: 'Xvfb'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/ubuntu/WebService/venv/lib/python3.5/site-packages/easyprocess/__init__.py", line 178, in check_installed
+    self.call()
+  File "/home/ubuntu/WebService/venv/lib/python3.5/site-packages/easyprocess/__init__.py", line 194, in call
+    self.start().wait(timeout=timeout)
+  File "/home/ubuntu/WebService/venv/lib/python3.5/site-packages/easyprocess/__init__.py", line 230, in start
+    raise EasyProcessError(self, 'start error')
+easyprocess.EasyProcessError: start error <EasyProcess cmd_param=['Xvfb', '-help'] cmd=['Xvfb', '-help'] oserror=[Errno 2] No such file or directory: 'Xvfb' return_code=None stdout="None" stderr="None" timeout_happened=False>
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/ubuntu/WebService/venv/lib/python3.5/site-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/ubuntu/WebService/venv/lib/python3.5/site-packages/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/ubuntu/WebService/venv/lib/python3.5/site-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/ubuntu/WebService/venv/lib/python3.5/site-packages/flask/_compat.py", line 33, in reraise
+    raise value
+  File "/home/ubuntu/WebService/venv/lib/python3.5/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/ubuntu/WebService/venv/lib/python3.5/site-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "./__init__.py", line 29, in home
+    crawler = Crawler()
+  File "./parser.py", line 13, in __init__
+    display = Display(visible=0, size=(800, 800))
+  File "/home/ubuntu/WebService/venv/lib/python3.5/site-packages/pyvirtualdisplay/display.py", line 34, in __init__
+    self._obj = self.display_class(
+  File "/home/ubuntu/WebService/venv/lib/python3.5/site-packages/pyvirtualdisplay/display.py", line 52, in display_class
+    cls.check_installed()
+  File "/home/ubuntu/WebService/venv/lib/python3.5/site-packages/pyvirtualdisplay/xvfb.py", line 38, in check_installed
+    ubuntu_package=PACKAGE).check_installed()
+  File "/home/ubuntu/WebService/venv/lib/python3.5/site-packages/easyprocess/__init__.py", line 180, in check_installed
+    raise EasyProcessCheckInstalledError(self)
+easyprocess.EasyProcessCheckInstalledError: cmd=['Xvfb', '-help']
+OSError=[Errno 2] No such file or directory: 'Xvfb'
+Program install error! 
+You can install it in terminal:
+sudo apt-get install xvfb
+----------------------------------------------------------------------------------
+[2018-03-26 16:47:19,424] [ERROR]: Exception on / [GET]
+Traceback (most recent call last):
+  File "/home/ubuntu/WebService/venv/lib/python3.5/site-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/ubuntu/WebService/venv/lib/python3.5/site-packages/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/ubuntu/WebService/venv/lib/python3.5/site-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/ubuntu/WebService/venv/lib/python3.5/site-packages/flask/_compat.py", line 33, in reraise
+    raise value
+  File "/home/ubuntu/WebService/venv/lib/python3.5/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/ubuntu/WebService/venv/lib/python3.5/site-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/ubuntu/WebService/web/__init__.py", line 29, in home
+    crawler = Crawler()
+  File "/home/ubuntu/WebService/web/parser.py", line 18, in __init__
+    self.driver = webdriver.Chrome('/usr/bin/chromedriver')
+  File "/home/ubuntu/WebService/venv/lib/python3.5/site-packages/selenium/webdriver/chrome/webdriver.py", line 75, in __init__
+    desired_capabilities=desired_capabilities)
+  File "/home/ubuntu/WebService/venv/lib/python3.5/site-packages/selenium/webdriver/remote/webdriver.py", line 154, in __init__
+    self.start_session(desired_capabilities, browser_profile)
+  File "/home/ubuntu/WebService/venv/lib/python3.5/site-packages/selenium/webdriver/remote/webdriver.py", line 243, in start_session
+    response = self.execute(Command.NEW_SESSION, parameters)
+  File "/home/ubuntu/WebService/venv/lib/python3.5/site-packages/selenium/webdriver/remote/webdriver.py", line 312, in execute
+    self.error_handler.check_response(response)
+  File "/home/ubuntu/WebService/venv/lib/python3.5/site-packages/selenium/webdriver/remote/errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.WebDriverException: Message: unknown error: Chrome failed to start: exited abnormally
+  (Driver info: chromedriver=2.33 (0),platform=Linux 4.4.0-1049-aws x86_64)
+
+----------------------------------------------------------------------------------
+[2018-03-26 17:40:40,200] [ERROR]: Exception on / [GET]
+Traceback (most recent call last):
+  File "/home/ubuntu/WebService/venv/lib/python3.5/site-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/ubuntu/WebService/venv/lib/python3.5/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/ubuntu/WebService/venv/lib/python3.5/site-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/ubuntu/WebService/venv/lib/python3.5/site-packages/flask/_compat.py", line 33, in reraise
+    raise value
+  File "/home/ubuntu/WebService/venv/lib/python3.5/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/ubuntu/WebService/venv/lib/python3.5/site-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/ubuntu/WebService/web/__init__.py", line 30, in home
+    crawler.body_filed_crawling('div','class','company')
+  File "/home/ubuntu/WebService/web/parser.py", line 26, in body_filed_crawling
+    if result :
+  File "/home/ubuntu/WebService/web/parser.py", line 26, in body_filed_crawling
+    if result :
+  File "/usr/lib/python3.5/bdb.py", line 48, in trace_dispatch
+    return self.dispatch_line(frame)
+  File "/usr/lib/python3.5/bdb.py", line 67, in dispatch_line
+    if self.quitting: raise BdbQuit
+bdb.BdbQuit
+----------------------------------------------------------------------------------
+[2018-03-26 17:42:31,830] [ERROR]: Exception on / [GET]
+Traceback (most recent call last):
+  File "/home/ubuntu/WebService/venv/lib/python3.5/site-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/ubuntu/WebService/venv/lib/python3.5/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/ubuntu/WebService/venv/lib/python3.5/site-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/ubuntu/WebService/venv/lib/python3.5/site-packages/flask/_compat.py", line 33, in reraise
+    raise value
+  File "/home/ubuntu/WebService/venv/lib/python3.5/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/ubuntu/WebService/venv/lib/python3.5/site-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/ubuntu/WebService/web/__init__.py", line 30, in home
+    crawler.body_filed_crawling('div','class','company')
+  File "/home/ubuntu/WebService/web/parser.py", line 26, in body_filed_crawling
+    if result :
+  File "/home/ubuntu/WebService/web/parser.py", line 26, in body_filed_crawling
+    if result :
+  File "/usr/lib/python3.5/bdb.py", line 48, in trace_dispatch
+    return self.dispatch_line(frame)
+  File "/usr/lib/python3.5/bdb.py", line 67, in dispatch_line
+    if self.quitting: raise BdbQuit
+bdb.BdbQuit
+----------------------------------------------------------------------------------
+[2018-03-26 17:44:20,316] [ERROR]: Exception on / [GET]
+Traceback (most recent call last):
+  File "/home/ubuntu/WebService/venv/lib/python3.5/site-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/ubuntu/WebService/venv/lib/python3.5/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/ubuntu/WebService/venv/lib/python3.5/site-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/ubuntu/WebService/venv/lib/python3.5/site-packages/flask/_compat.py", line 33, in reraise
+    raise value
+  File "/home/ubuntu/WebService/venv/lib/python3.5/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/ubuntu/WebService/venv/lib/python3.5/site-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/ubuntu/WebService/web/__init__.py", line 30, in home
+    crawler.body_filed_crawling('div','class','company')
+  File "/home/ubuntu/WebService/web/parser.py", line 26, in body_filed_crawling
+    if result :
+  File "/home/ubuntu/WebService/web/parser.py", line 26, in body_filed_crawling
+    if result :
+  File "/usr/lib/python3.5/bdb.py", line 48, in trace_dispatch
+    return self.dispatch_line(frame)
+  File "/usr/lib/python3.5/bdb.py", line 67, in dispatch_line
+    if self.quitting: raise BdbQuit
+bdb.BdbQuit
+----------------------------------------------------------------------------------
+[2018-03-26 17:44:41,132] [ERROR]: Exception on / [GET]
+Traceback (most recent call last):
+  File "/home/ubuntu/WebService/venv/lib/python3.5/site-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/ubuntu/WebService/venv/lib/python3.5/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/ubuntu/WebService/venv/lib/python3.5/site-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/ubuntu/WebService/venv/lib/python3.5/site-packages/flask/_compat.py", line 33, in reraise
+    raise value
+  File "/home/ubuntu/WebService/venv/lib/python3.5/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/ubuntu/WebService/venv/lib/python3.5/site-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/ubuntu/WebService/web/__init__.py", line 30, in home
+    crawler.body_filed_crawling('div','class','company')
+  File "/home/ubuntu/WebService/web/parser.py", line 26, in body_filed_crawling
+    if result :
+  File "/home/ubuntu/WebService/web/parser.py", line 26, in body_filed_crawling
+    if result :
+  File "/usr/lib/python3.5/bdb.py", line 48, in trace_dispatch
+    return self.dispatch_line(frame)
+  File "/usr/lib/python3.5/bdb.py", line 67, in dispatch_line
+    if self.quitting: raise BdbQuit
+bdb.BdbQuit
+----------------------------------------------------------------------------------
+[2018-03-26 17:46:47,962] [ERROR]: Exception on / [GET]
+Traceback (most recent call last):
+  File "/home/ubuntu/WebService/venv/lib/python3.5/site-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/ubuntu/WebService/venv/lib/python3.5/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/ubuntu/WebService/venv/lib/python3.5/site-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/ubuntu/WebService/venv/lib/python3.5/site-packages/flask/_compat.py", line 33, in reraise
+    raise value
+  File "/home/ubuntu/WebService/venv/lib/python3.5/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/ubuntu/WebService/venv/lib/python3.5/site-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/ubuntu/WebService/web/__init__.py", line 30, in home
+    data = crawler.body_filed_crawling('div','class','company')
+  File "/home/ubuntu/WebService/web/parser.py", line 25, in body_filed_crawling
+    if result :
+  File "/home/ubuntu/WebService/web/parser.py", line 25, in body_filed_crawling
+    if result :
+  File "/usr/lib/python3.5/bdb.py", line 48, in trace_dispatch
+    return self.dispatch_line(frame)
+  File "/usr/lib/python3.5/bdb.py", line 67, in dispatch_line
+    if self.quitting: raise BdbQuit
+bdb.BdbQuit
+----------------------------------------------------------------------------------
+[2018-03-26 17:47:28,328] [ERROR]: Exception on / [GET]
+Traceback (most recent call last):
+  File "/home/ubuntu/WebService/venv/lib/python3.5/site-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/ubuntu/WebService/venv/lib/python3.5/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/ubuntu/WebService/venv/lib/python3.5/site-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/ubuntu/WebService/venv/lib/python3.5/site-packages/flask/_compat.py", line 33, in reraise
+    raise value
+  File "/home/ubuntu/WebService/venv/lib/python3.5/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/ubuntu/WebService/venv/lib/python3.5/site-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/ubuntu/WebService/web/__init__.py", line 30, in home
+    data = crawler.body_filed_crawling('div','class','company')
+  File "/home/ubuntu/WebService/web/parser.py", line 25, in body_filed_crawling
+    if result :
+  File "/home/ubuntu/WebService/web/parser.py", line 25, in body_filed_crawling
+    if result :
+  File "/usr/lib/python3.5/bdb.py", line 48, in trace_dispatch
+    return self.dispatch_line(frame)
+  File "/usr/lib/python3.5/bdb.py", line 67, in dispatch_line
+    if self.quitting: raise BdbQuit
+bdb.BdbQuit
+----------------------------------------------------------------------------------
+[2018-03-26 17:47:48,506] [ERROR]: Exception on / [GET]
+Traceback (most recent call last):
+  File "/home/ubuntu/WebService/venv/lib/python3.5/site-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/ubuntu/WebService/venv/lib/python3.5/site-packages/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/ubuntu/WebService/venv/lib/python3.5/site-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/ubuntu/WebService/venv/lib/python3.5/site-packages/flask/_compat.py", line 33, in reraise
+    raise value
+  File "/home/ubuntu/WebService/venv/lib/python3.5/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/ubuntu/WebService/venv/lib/python3.5/site-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/ubuntu/WebService/web/__init__.py", line 31, in home
+    return render_template('home.html',data = crawler.data)
+AttributeError: 'Crawler' object has no attribute 'data'
+----------------------------------------------------------------------------------
+[2018-03-26 18:00:50,106] [ERROR]: Exception on / [GET]
+Traceback (most recent call last):
+  File "/home/ubuntu/WebService/venv/lib/python3.5/site-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/ubuntu/WebService/venv/lib/python3.5/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/ubuntu/WebService/venv/lib/python3.5/site-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/ubuntu/WebService/venv/lib/python3.5/site-packages/flask/_compat.py", line 33, in reraise
+    raise value
+  File "/home/ubuntu/WebService/venv/lib/python3.5/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/ubuntu/WebService/venv/lib/python3.5/site-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/ubuntu/WebService/web/__init__.py", line 30, in home
+    data = crawler.body_filed_crawling('div','class','company')
+  File "/home/ubuntu/WebService/web/parser.py", line 25, in body_filed_crawling
+    if result :
+  File "/home/ubuntu/WebService/web/parser.py", line 25, in body_filed_crawling
+    if result :
+  File "/usr/lib/python3.5/bdb.py", line 48, in trace_dispatch
+    return self.dispatch_line(frame)
+  File "/usr/lib/python3.5/bdb.py", line 67, in dispatch_line
+    if self.quitting: raise BdbQuit
+bdb.BdbQuit

@@ -2,6 +2,8 @@
 {% block content %}
 <h1> 채용공고 </h1>
 <div>
-	<!--{% data %} -->
+	{% for d in data %}
+		{{ d }}
+	{% endfor %} 
 </div>
 {% endblock %}
