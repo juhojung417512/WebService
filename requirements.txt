@@ -1,0 +1,7 @@
+requests==2.10.0
+Flask==0.10.1
+Jinja2==2.8
+BeautifulSoup4
+pyvirtualdisplay
+chromium-chromedriver
+

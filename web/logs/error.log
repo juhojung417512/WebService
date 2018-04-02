@@ -338,3 +338,203 @@ Traceback (most recent call last):
   File "/usr/lib/python3.5/bdb.py", line 67, in dispatch_line
     if self.quitting: raise BdbQuit
 bdb.BdbQuit
+----------------------------------------------------------------------------------
+[2018-03-29 13:23:15,930] [ERROR]: Exception on / [GET]
+Traceback (most recent call last):
+  File "/home/ubuntu/WebService/venv/lib/python3.5/site-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/ubuntu/WebService/venv/lib/python3.5/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/ubuntu/WebService/venv/lib/python3.5/site-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/ubuntu/WebService/venv/lib/python3.5/site-packages/flask/_compat.py", line 33, in reraise
+    raise value
+  File "/home/ubuntu/WebService/venv/lib/python3.5/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/ubuntu/WebService/venv/lib/python3.5/site-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/ubuntu/WebService/web/__init__.py", line 32, in home
+    data = c_data.converter(data)
+  File "/home/ubuntu/WebService/web/soup_converter.py", line 7, in converter
+    for data in soup_data :
+  File "/home/ubuntu/WebService/web/soup_converter.py", line 7, in converter
+    for data in soup_data :
+  File "/usr/lib/python3.5/bdb.py", line 48, in trace_dispatch
+    return self.dispatch_line(frame)
+  File "/usr/lib/python3.5/bdb.py", line 67, in dispatch_line
+    if self.quitting: raise BdbQuit
+bdb.BdbQuit
+----------------------------------------------------------------------------------
+[2018-03-29 18:29:10,550] [ERROR]: Exception on / [GET]
+Traceback (most recent call last):
+  File "/home/ubuntu/WebService/venv/lib/python3.5/site-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/ubuntu/WebService/venv/lib/python3.5/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/ubuntu/WebService/venv/lib/python3.5/site-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/ubuntu/WebService/venv/lib/python3.5/site-packages/flask/_compat.py", line 33, in reraise
+    raise value
+  File "/home/ubuntu/WebService/venv/lib/python3.5/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/ubuntu/WebService/venv/lib/python3.5/site-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/ubuntu/WebService/web/__init__.py", line 32, in home
+    data = c_data.converter(data)
+  File "/home/ubuntu/WebService/web/soup_converter.py", line 7, in converter
+    self.img_src = ''
+  File "/home/ubuntu/WebService/web/soup_converter.py", line 7, in converter
+    self.img_src = ''
+  File "/usr/lib/python3.5/bdb.py", line 48, in trace_dispatch
+    return self.dispatch_line(frame)
+  File "/usr/lib/python3.5/bdb.py", line 67, in dispatch_line
+    if self.quitting: raise BdbQuit
+bdb.BdbQuit
+----------------------------------------------------------------------------------
+[2018-04-01 08:35:34,265] [ERROR]: Exception on / [GET]
+Traceback (most recent call last):
+  File "/home/ubuntu/WebService/venv/lib/python3.5/site-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/ubuntu/WebService/venv/lib/python3.5/site-packages/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/ubuntu/WebService/venv/lib/python3.5/site-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/ubuntu/WebService/venv/lib/python3.5/site-packages/flask/_compat.py", line 33, in reraise
+    raise value
+  File "/home/ubuntu/WebService/venv/lib/python3.5/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/ubuntu/WebService/venv/lib/python3.5/site-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "./__init__.py", line 32, in home
+    data = c_data.converter(data)
+  File "./soup_converter.py", line 14, in converter
+    self.incruit_cases = data.find('span').contents[0]
+AttributeError: 'NoneType' object has no attribute 'contents'
+----------------------------------------------------------------------------------
+[2018-04-01 09:26:04,484] [ERROR]: Exception on / [GET]
+Traceback (most recent call last):
+  File "/home/ubuntu/WebService/venv/lib/python3.5/site-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/ubuntu/WebService/venv/lib/python3.5/site-packages/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/ubuntu/WebService/venv/lib/python3.5/site-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/ubuntu/WebService/venv/lib/python3.5/site-packages/flask/_compat.py", line 33, in reraise
+    raise value
+  File "/home/ubuntu/WebService/venv/lib/python3.5/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/ubuntu/WebService/venv/lib/python3.5/site-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/ubuntu/WebService/web/__init__.py", line 32, in home
+    data = c_data.converter(data)
+  File "/home/ubuntu/WebService/web/soup_converter.py", line 11, in converter
+    pdb.set_trace()
+AttributeError: 'NoneType' object has no attribute 'contents'
+----------------------------------------------------------------------------------
+[2018-04-01 10:47:51,784] [ERROR]: Exception on / [GET]
+Traceback (most recent call last):
+  File "/home/ubuntu/WebService/venv/lib/python3.5/site-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/ubuntu/WebService/venv/lib/python3.5/site-packages/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/ubuntu/WebService/venv/lib/python3.5/site-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/ubuntu/WebService/venv/lib/python3.5/site-packages/flask/_compat.py", line 33, in reraise
+    raise value
+  File "/home/ubuntu/WebService/venv/lib/python3.5/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/ubuntu/WebService/venv/lib/python3.5/site-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/ubuntu/WebService/web/__init__.py", line 33, in home
+    return render_template('home.html',data = data)
+  File "/home/ubuntu/WebService/venv/lib/python3.5/site-packages/flask/templating.py", line 128, in render_template
+    context, ctx.app)
+  File "/home/ubuntu/WebService/venv/lib/python3.5/site-packages/flask/templating.py", line 110, in _render
+    rv = template.render(context)
+  File "/home/ubuntu/WebService/venv/lib/python3.5/site-packages/jinja2/environment.py", line 989, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "/home/ubuntu/WebService/venv/lib/python3.5/site-packages/jinja2/environment.py", line 754, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/ubuntu/WebService/venv/lib/python3.5/site-packages/jinja2/_compat.py", line 37, in reraise
+    raise value.with_traceback(tb)
+  File "/home/ubuntu/WebService/web/templates/home.html", line 1, in top-level template code
+    {% extends "layout.html" %}
+  File "/home/ubuntu/WebService/web/templates/layout.html", line 40, in top-level template code
+    {% block content %}
+  File "/home/ubuntu/WebService/web/templates/home.html", line 5, in block "content"
+    {% for d in data %}
+TypeError: 'NoneType' object is not iterable
+----------------------------------------------------------------------------------
+[2018-04-01 11:01:32,040] [ERROR]: Exception on / [GET]
+Traceback (most recent call last):
+  File "/home/ubuntu/WebService/venv/lib/python3.5/site-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/ubuntu/WebService/venv/lib/python3.5/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/ubuntu/WebService/venv/lib/python3.5/site-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/ubuntu/WebService/venv/lib/python3.5/site-packages/flask/_compat.py", line 33, in reraise
+    raise value
+  File "/home/ubuntu/WebService/venv/lib/python3.5/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/ubuntu/WebService/venv/lib/python3.5/site-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/ubuntu/WebService/web/__init__.py", line 34, in home
+    company_data.append(c_data.converter(d))
+  File "/home/ubuntu/WebService/web/soup_converter.py", line 11, in converter
+    try :
+  File "/home/ubuntu/WebService/web/soup_converter.py", line 11, in converter
+    try :
+  File "/usr/lib/python3.5/bdb.py", line 48, in trace_dispatch
+    return self.dispatch_line(frame)
+  File "/usr/lib/python3.5/bdb.py", line 67, in dispatch_line
+    if self.quitting: raise BdbQuit
+bdb.BdbQuit
+----------------------------------------------------------------------------------
+[2018-04-01 11:44:15,006] [ERROR]: Exception on / [GET]
+Traceback (most recent call last):
+  File "/home/ubuntu/WebService/venv/lib/python3.5/site-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/ubuntu/WebService/venv/lib/python3.5/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/ubuntu/WebService/venv/lib/python3.5/site-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/ubuntu/WebService/venv/lib/python3.5/site-packages/flask/_compat.py", line 33, in reraise
+    raise value
+  File "/home/ubuntu/WebService/venv/lib/python3.5/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/ubuntu/WebService/venv/lib/python3.5/site-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "./__init__.py", line 34, in home
+    c_data.converter(d)
+  File "./soup_converter.py", line 26, in converter
+    pdb.set_trace()
+  File "/usr/lib/python3.5/bdb.py", line 52, in trace_dispatch
+    return self.dispatch_return(frame, arg)
+  File "/usr/lib/python3.5/bdb.py", line 96, in dispatch_return
+    if self.quitting: raise BdbQuit
+bdb.BdbQuit
+----------------------------------------------------------------------------------
+[2018-04-02 09:51:33,179] [ERROR]: Exception on / [GET]
+Traceback (most recent call last):
+  File "/home/ubuntu/WebService/venv/lib/python3.5/site-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/ubuntu/WebService/venv/lib/python3.5/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/ubuntu/WebService/venv/lib/python3.5/site-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/ubuntu/WebService/venv/lib/python3.5/site-packages/flask/_compat.py", line 33, in reraise
+    raise value
+  File "/home/ubuntu/WebService/venv/lib/python3.5/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/ubuntu/WebService/venv/lib/python3.5/site-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "./__init__.py", line 34, in home
+    c_data.converter(d)
+  File "./soup_converter.py", line 26, in converter
+    pdb.set_trace()
+  File "/usr/lib/python3.5/bdb.py", line 52, in trace_dispatch
+    return self.dispatch_return(frame, arg)
+  File "/usr/lib/python3.5/bdb.py", line 96, in dispatch_return
+    if self.quitting: raise BdbQuit
+bdb.BdbQuit

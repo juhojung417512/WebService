@@ -1,6 +1,7 @@
 {% extends "layout.html" %}
 {% block content %}
 	{% for d in data %}
+		123
 		<div class="company">
 			<a href="gamejob.co.kr/{{ d.href_url }}" target="_blank">
 				<div class="logo"><img src="{{ d.img_src }}" alt="{{ d.company_name }}" onerror="" /></div><strong>{{ d.company_name }}</strong> <span class="count">{{ d.incruit_cases }}</span>

@@ -9,7 +9,7 @@ from logging import Formatter
 import pdb
 # module import
 from parser import Crawler
-
+from soup_converter import g_companyData
 app = Flask(__name__)
 
 log_filepath = '/home/ubuntu/WebService/web/logs'
@@ -27,6 +27,11 @@ if not app.debug:
 @app.route('/')
 def home():
 	crawler = Crawler()
+	c_data = g_companyData()
 	data = crawler.body_filed_crawling('div','class','company')
-	return render_template('home.html',data = data)
+	company_data = []
+	for d in data : 
+		c_data.converter(d)
+		company_data.append(c_data)
+	return render_template('home.html',data = company_data)
 
