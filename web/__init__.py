@@ -26,12 +26,14 @@ if not app.debug:
 
 @app.route('/')
 def home():
+	return render_template('home.html')
+
+@app.route('/incruit')
+def incruit_cases():
 	crawler = Crawler()
-	c_data = g_companyData()
 	data = crawler.body_filed_crawling('div','class','company')
 	company_data = []
 	for d in data : 
-		c_data.converter(d)
+		c_data = g_companyData().converter(d)
 		company_data.append(c_data)
-	return render_template('home.html',data = company_data)
-
+	return render_template('incruit.html',data = company_data)

@@ -538,3 +538,153 @@ Traceback (most recent call last):
   File "/usr/lib/python3.5/bdb.py", line 96, in dispatch_return
     if self.quitting: raise BdbQuit
 bdb.BdbQuit
+----------------------------------------------------------------------------------
+[2018-04-04 07:23:35,688] [ERROR]: Exception on / [GET]
+Traceback (most recent call last):
+  File "/home/ubuntu/WebService/venv/lib/python3.5/site-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/ubuntu/WebService/venv/lib/python3.5/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/ubuntu/WebService/venv/lib/python3.5/site-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/ubuntu/WebService/venv/lib/python3.5/site-packages/flask/_compat.py", line 33, in reraise
+    raise value
+  File "/home/ubuntu/WebService/venv/lib/python3.5/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/ubuntu/WebService/venv/lib/python3.5/site-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/ubuntu/WebService/web/__init__.py", line 34, in home
+    c_data.converter(d)
+  File "/home/ubuntu/WebService/web/soup_converter.py", line 11, in converter
+    try :
+  File "/home/ubuntu/WebService/web/soup_converter.py", line 11, in converter
+    try :
+  File "/usr/lib/python3.5/bdb.py", line 48, in trace_dispatch
+    return self.dispatch_line(frame)
+  File "/usr/lib/python3.5/bdb.py", line 67, in dispatch_line
+    if self.quitting: raise BdbQuit
+bdb.BdbQuit
+----------------------------------------------------------------------------------
+[2018-04-04 07:56:29,128] [ERROR]: Exception on /incruit [GET]
+Traceback (most recent call last):
+  File "/home/ubuntu/WebService/venv/lib/python3.5/site-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/ubuntu/WebService/venv/lib/python3.5/site-packages/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/ubuntu/WebService/venv/lib/python3.5/site-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/ubuntu/WebService/venv/lib/python3.5/site-packages/flask/_compat.py", line 33, in reraise
+    raise value
+  File "/home/ubuntu/WebService/venv/lib/python3.5/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/ubuntu/WebService/venv/lib/python3.5/site-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/ubuntu/WebService/web/__init__.py", line 33, in incruit_cases
+    crawler = Crawler()
+  File "/home/ubuntu/WebService/web/parser.py", line 16, in __init__
+    self.driver = webdriver.Chrome('/usr/bin/chromedriver',chrome_options=chrome_options)
+  File "/home/ubuntu/WebService/venv/lib/python3.5/site-packages/selenium/webdriver/chrome/webdriver.py", line 75, in __init__
+    desired_capabilities=desired_capabilities)
+  File "/home/ubuntu/WebService/venv/lib/python3.5/site-packages/selenium/webdriver/remote/webdriver.py", line 154, in __init__
+    self.start_session(desired_capabilities, browser_profile)
+  File "/home/ubuntu/WebService/venv/lib/python3.5/site-packages/selenium/webdriver/remote/webdriver.py", line 243, in start_session
+    response = self.execute(Command.NEW_SESSION, parameters)
+  File "/home/ubuntu/WebService/venv/lib/python3.5/site-packages/selenium/webdriver/remote/webdriver.py", line 310, in execute
+    response = self.command_executor.execute(driver_command, params)
+  File "/home/ubuntu/WebService/venv/lib/python3.5/site-packages/selenium/webdriver/remote/remote_connection.py", line 466, in execute
+    return self._request(command_info[0], url, body=data)
+  File "/home/ubuntu/WebService/venv/lib/python3.5/site-packages/selenium/webdriver/remote/remote_connection.py", line 490, in _request
+    resp = self._conn.getresponse()
+  File "/usr/lib/python3.5/http/client.py", line 1197, in getresponse
+    response.begin()
+  File "/usr/lib/python3.5/http/client.py", line 297, in begin
+    version, status, reason = self._read_status()
+  File "/usr/lib/python3.5/http/client.py", line 258, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+  File "/usr/lib/python3.5/socket.py", line 575, in readinto
+    return self._sock.recv_into(b)
+ConnectionResetError: [Errno 104] Connection reset by peer
+----------------------------------------------------------------------------------
+[2018-04-04 07:58:01,605] [ERROR]: Exception on /incruit [GET]
+Traceback (most recent call last):
+  File "/home/ubuntu/WebService/venv/lib/python3.5/site-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/ubuntu/WebService/venv/lib/python3.5/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/ubuntu/WebService/venv/lib/python3.5/site-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/ubuntu/WebService/venv/lib/python3.5/site-packages/flask/_compat.py", line 33, in reraise
+    raise value
+  File "/home/ubuntu/WebService/venv/lib/python3.5/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/ubuntu/WebService/venv/lib/python3.5/site-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/ubuntu/WebService/web/__init__.py", line 36, in incruit_cases
+    for d in data :
+  File "/home/ubuntu/WebService/web/__init__.py", line 36, in incruit_cases
+    for d in data :
+  File "/usr/lib/python3.5/bdb.py", line 48, in trace_dispatch
+    return self.dispatch_line(frame)
+  File "/usr/lib/python3.5/bdb.py", line 67, in dispatch_line
+    if self.quitting: raise BdbQuit
+bdb.BdbQuit
+----------------------------------------------------------------------------------
+[2018-04-04 07:59:05,812] [ERROR]: Exception on /incruit [GET]
+Traceback (most recent call last):
+  File "/home/ubuntu/WebService/venv/lib/python3.5/site-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/ubuntu/WebService/venv/lib/python3.5/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/ubuntu/WebService/venv/lib/python3.5/site-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/ubuntu/WebService/venv/lib/python3.5/site-packages/flask/_compat.py", line 33, in reraise
+    raise value
+  File "/home/ubuntu/WebService/venv/lib/python3.5/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/ubuntu/WebService/venv/lib/python3.5/site-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/ubuntu/WebService/web/__init__.py", line 38, in incruit_cases
+    pdb.set_trace()
+  File "/home/ubuntu/WebService/web/__init__.py", line 38, in incruit_cases
+    pdb.set_trace()
+  File "/usr/lib/python3.5/bdb.py", line 48, in trace_dispatch
+    return self.dispatch_line(frame)
+  File "/usr/lib/python3.5/bdb.py", line 67, in dispatch_line
+    if self.quitting: raise BdbQuit
+bdb.BdbQuit
+----------------------------------------------------------------------------------
+[2018-04-04 08:00:58,219] [ERROR]: Exception on /incruit [GET]
+Traceback (most recent call last):
+  File "/home/ubuntu/WebService/venv/lib/python3.5/site-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/ubuntu/WebService/venv/lib/python3.5/site-packages/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/ubuntu/WebService/venv/lib/python3.5/site-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/ubuntu/WebService/venv/lib/python3.5/site-packages/flask/_compat.py", line 33, in reraise
+    raise value
+  File "/home/ubuntu/WebService/venv/lib/python3.5/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/ubuntu/WebService/venv/lib/python3.5/site-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/ubuntu/WebService/web/__init__.py", line 38, in incruit_cases
+    print(c_data.company_name)
+AttributeError: 'NoneType' object has no attribute 'company_name'
+----------------------------------------------------------------------------------
+[2018-04-04 08:01:19,923] [ERROR]: Exception on /incruit [GET]
+Traceback (most recent call last):
+  File "/home/ubuntu/WebService/venv/lib/python3.5/site-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/ubuntu/WebService/venv/lib/python3.5/site-packages/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/ubuntu/WebService/venv/lib/python3.5/site-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/ubuntu/WebService/venv/lib/python3.5/site-packages/flask/_compat.py", line 33, in reraise
+    raise value
+  File "/home/ubuntu/WebService/venv/lib/python3.5/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/ubuntu/WebService/venv/lib/python3.5/site-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/ubuntu/WebService/web/__init__.py", line 38, in incruit_cases
+    print(c_data.company_name)
+AttributeError: 'NoneType' object has no attribute 'company_name'

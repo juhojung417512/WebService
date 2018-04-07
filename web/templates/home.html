@@ -2,8 +2,8 @@
 {% block content %}
 <h1> 채용공고 </h1>
 <div>
-	{% for d in data %}
-		{{ d }}
-	{% endfor %} 
+	<form action="/incruit" method="GET" class="form-layout">
+		<button type="submit" name="submit">채용공고 조회</button>
+	</form>
 </div>
 {% endblock %}
